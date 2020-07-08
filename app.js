@@ -36,7 +36,7 @@ app.get('/registration',(req,res) =>{
 })
 
 app.post('/registration_success',(req,res) =>{
-    new users({
+    users.create({
         firstname: req.body.firstname,
         lastname: req.body.lastname,
         email: req.body.email,
